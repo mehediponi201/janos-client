@@ -10,6 +10,7 @@ import Home from './components/Home';
 import About from './AboutComponent/About';
 import ServiceApp from './ServicesComponent/ServiceApp';
 import ApplicationForm from './carrersComponent/ApplicationForm';
+import ContactUs from './contactComponent/ContactUs';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path:"/application",
         element: <ApplicationForm></ApplicationForm>
+      },
+      {
+        path:"/contact",
+        element:<ContactUs></ContactUs>
       }
     ],
   },

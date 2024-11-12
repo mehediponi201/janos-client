@@ -2,7 +2,17 @@
 const ApplicationForm = () => {
     return (
         <div className="mt-10">
-            <form className="p-5 max-w-lg mx-auto space-y-4 bg-white shadow-lg rounded">
+            <div className="space-y-3">
+                <h4 className="text-5xl font-bold text-center">JOIN US</h4>
+                <p className="text-center">
+                At Janos, we foster and inspire innovative ideas to support growth and value 
+                addition. We <br /> are passionate about the work we do. Following a transparent system 
+                and keeping the <br /> communication channels open, we commute ideas and suggestions 
+                within the team. <br /> We invest in our people and offer them numerous learning and 
+                development opportunities. <br /> Join us to be a part of a visionary team.
+                </p>
+            </div>
+            <form className="p-5 max-w-lg mx-auto space-y-4 bg-white shadow-lg rounded mt-10">
                 {/* Position */}
                 <div>
                     <label className="block font-semibold text-brown-600" htmlFor="position">
