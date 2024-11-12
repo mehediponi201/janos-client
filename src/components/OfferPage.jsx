@@ -4,6 +4,7 @@ import pic3 from '../assets/offer/home-engineers.png';
 import pic4 from '../assets/offer/home-collaboration.png';
 
 const OfferPage = () => {
+
     return (
         <div className="mt-40 pt-10">
             <div className="space-y-5">

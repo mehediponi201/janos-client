@@ -6,14 +6,14 @@ const Navbar = () => {
     const navLink = 
     <>
         <li><Link className="text-lg" to={'/'}>Home</Link></li>
-        <li><Link className="text-lg" to={'/'}>About Us</Link></li>
-        <li><Link className="text-lg" to={'/'}>Services</Link></li>
-        <li><Link className="text-lg" to={'/'}>Careers</Link></li>
+        <li><Link className="text-lg" to={'/about'}>About Us</Link></li>
+        <li><Link className="text-lg" to={'/services'}>Services</Link></li>
+        <li><Link className="text-lg" to={'/application'}>Careers</Link></li>
         <li><Link className="text-lg" to={'/'}>Contact Us</Link></li>
     </>
 
     return (
-        <div className="mt-5">
+        <div className="mt-5 sticky top-0 z-50">
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
