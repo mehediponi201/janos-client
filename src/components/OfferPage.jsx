@@ -2,15 +2,41 @@ import pic1 from '../assets/offer/home-team.png';
 import pic2 from '../assets/offer/home-supervision.png';
 import pic3 from '../assets/offer/home-engineers.png';
 import pic4 from '../assets/offer/home-collaboration.png';
+import './Services.css';
+import React, { useEffect, useRef } from 'react';
 
 const OfferPage = () => {
+
+    // Create an array of refs for each image
+    const imageRefs = [useRef(), useRef(), useRef(), useRef()];
+
+    useEffect(() => {
+        const observerOptions = {
+            threshold: 0.3, // Trigger animation when 30% of the image is visible
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        // Observe each image
+        imageRefs.forEach((ref) => {
+            if (ref.current) observer.observe(ref.current);
+        });
+
+        return () => observer.disconnect(); // Clean up observer on component unmount
+    }, []);
 
     return (
         <div className="mt-40 pt-10">
             <div className="space-y-5">
                 <h3 className="text-5xl text-center font-semibold">WHAT WE OFFER</h3>
                 <p className="text-center">
-                    Enosis works as an extension of your development and testing team. We will work  together to solve your <br /> business
+                    Janos works as an extension of your development and testing team. We will work  together to solve your <br /> business
                     cases and get the maximum value of your budget. One of our differentiating qualities is that we <br /> take the time
                     to understand the particular challenges, difficulties, and needs of your business.
                 </p>
@@ -19,9 +45,9 @@ const OfferPage = () => {
             <div className='flex justify-center items-center min-h-screen mt-30 pt-20'>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-40'>
                     {/* 1st card */}
-                    <div className="card">
+                    <div ref={imageRefs[0]} className="animated-image card">
                         <figure>
-                            <img className='w-[400px] h-[300px]' src={pic1} alt="Shoes" />
+                            <img  className=' w-[400px] h-[300px]' src={pic1} alt="Shoes" />
                         </figure>
                         <div className="card-body">
                             <h2 className="card-title text-red-600 font-bold text-4xl">Qualified Engineers</h2>
@@ -31,7 +57,7 @@ const OfferPage = () => {
                         </div>
                     </div>
                     {/* 2nd card */}
-                    <div className="card ">
+                    <div ref={imageRefs[1]} className="animated-image card ">
                         <figure>
                             <img className='w-[400px] h-[300px]' src={pic2} alt="Shoes" />
                         </figure>
@@ -42,7 +68,7 @@ const OfferPage = () => {
                         </div>
                     </div>
                     {/* 3rd card */}
-                    <div className="card">
+                    <div ref={imageRefs[2]}  className="animated-image  card">
                         <figure>
                             <img className='w-[400px] h-[300px]' src={pic3} alt="Shoes" />
                         </figure>
@@ -55,7 +81,7 @@ const OfferPage = () => {
                         </div>
                     </div>
                     {/* 4th card */}
-                    <div className="card">
+                    <div ref={imageRefs[3]} className="animated-image card">
                         <figure>
                             <img className='w-[400px] h-[300px]' src={pic4} alt="Shoes" />
                         </figure>

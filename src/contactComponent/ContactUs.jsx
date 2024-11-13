@@ -3,7 +3,7 @@ import img from '../assets/offer/carousel-2.jpg';
 
 const ContactUs = () => {
     return (
-        <div>
+        <div className='mt-10'>
             <div
                 style={{
                     backgroundImage: `url(${img})`,
