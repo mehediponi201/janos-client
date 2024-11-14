@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "title": "Dedicated Team",
+      "description": "Our in-house team is yours too. We will jump in and ramp up quickly. Your goals become our goals. We will navigate the risks of software development together."
+    },
+    {
+      "id": 2,
+      "title": "Qualified Engineers",
+      "description": "Janos is a team of software experts. We continue to strive in being the best in the industry by hiring engineers from renowned universities. Our team is experienced in a wide range of technology stacks."
+    },
+    {
+      "id": 3,
+      "title": "Customer Focused",
+      "description": "Our solutions are designed with the customer in mind. We aim to deliver products that meet customer needs and drive success by building a deep understanding of each client's unique requirements."
+    },
+    {
+      "id": 4,
+      "title": "Innovative Solutions",
+      "description": "We prioritize innovation to create solutions that are not only functional but also cutting-edge. Our team constantly explores new technologies and methodologies to stay ahead in the industry."
+    },
+    {
+      "id": 5,
+      "title": "Agile Methodology",
+      "description": "We use agile methodologies to ensure flexibility and adaptability in our projects. This allows us to respond quickly to changing requirements and deliver high-quality software efficiently."
+    },
+    {
+      "id": 6,
+      "title": "24/7 Support",
+      "description": "Our support team is available 24/7 to assist you with any issues or questions. We are committed to providing excellent customer service and ensuring your satisfaction with our solutions."
+    }
+  ]
+  

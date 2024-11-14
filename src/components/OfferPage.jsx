@@ -2,13 +2,15 @@ import pic1 from '../assets/offer/home-team.png';
 import pic2 from '../assets/offer/home-supervision.png';
 import pic3 from '../assets/offer/home-engineers.png';
 import pic4 from '../assets/offer/home-collaboration.png';
+import pic5 from '../assets/offer/offer-5.png';
+import pic6 from '../assets/offer/offer-6.png';
 import './Services.css';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const OfferPage = () => {
 
-    // Create an array of refs for each image
-    const imageRefs = [useRef(), useRef(), useRef(), useRef()];
+    const imageRefs = [useRef(), useRef(), useRef(), useRef(), useRef(), useRef()];
 
     useEffect(() => {
         const observerOptions = {
@@ -28,8 +30,38 @@ const OfferPage = () => {
             if (ref.current) observer.observe(ref.current);
         });
 
-        return () => observer.disconnect(); // Clean up observer on component unmount
+        return () => observer.disconnect();
     }, []);
+
+
+    // Read More Text Logic
+    const [showFullText, setShowFullText] = useState(false);
+
+    const toggleText = () => {
+        setShowFullText(!showFullText);
+    };
+
+    const fullText1 = "Shares Management of public limited company with core functionalities";
+    const previewText1 = fullText1.split(' ').slice(0, 10).join(' ') + (fullText1.split(' ').length > 10 ? '...' : '');
+
+    const fullText2 = "Hybrid Virtual Annual General Meeting of Public Limited Company";
+    const previewText2 = fullText2.split(' ').slice(0, 10).join(' ') + (fullText2.split(' ').length > 10 ? '...' : '');
+
+    const fullText3 = "Change how a firm declares and distributes its dividends.";
+    const previewText3 = fullText3.split(' ').slice(0, 10).join(' ') + (fullText3.split(' ').length > 10 ? '...' : '');
+
+    const fullText4 = "Right Shares Issue Processing of Public Limited Company";
+    const previewText4 = fullText4.split(' ').slice(0, 10).join(' ') + (fullText4.split(' ').length > 10 ? '...' : '');
+
+    const fullText5 = "HUMAN RESOURCES as the CAPITAL like other capital resources deployed";
+    const previewText5 = fullText5.split(' ').slice(0, 10).join(' ') + (fullText5.split(' ').length > 10 ? '...' : '');
+
+    const fullText6 = "HUMAN RESOURCES as the CAPITAL like other capital resources deployed";
+    const previewText6 = fullText6.split(' ').slice(0, 10).join(' ') + (fullText6.split(' ').length > 10 ? '...' : '');
+
+
+
+
 
     return (
         <div className="mt-40 pt-10">
@@ -47,13 +79,16 @@ const OfferPage = () => {
                     {/* 1st card */}
                     <div ref={imageRefs[0]} className="animated-image card">
                         <figure>
-                            <img  className=' w-[400px] h-[300px]' src={pic1} alt="Shoes" />
+                            <img className=' w-[400px] h-[300px]' src={pic1} alt="Shoes" />
                         </figure>
                         <div className="card-body">
-                            <h2 className="card-title text-red-600 font-bold text-4xl">Qualified Engineers</h2>
-                            <p>Janos is a team of software experts. We continue to strive in being the best in the industry
-                                by hiring engineers from renowned universities. Having team members experienced in a wide range of
-                                technology stacks enables us to meet different customers needs.</p>
+                            <h2 className="card-title text-red-600 font-bold text-3xl">EasyAM-SMS Share Management Systems</h2>
+                            <p>{showFullText ? fullText1 : previewText1}</p>
+                            <button onClick={toggleText} className="text-blue-500 text-left text-lg">
+                                <Link to={'/card1'}>
+                                    {showFullText ? "Show Less" : "Read More.."}
+                                </Link>
+                            </button>
                         </div>
                     </div>
                     {/* 2nd card */}
@@ -62,22 +97,28 @@ const OfferPage = () => {
                             <img className='w-[400px] h-[300px]' src={pic2} alt="Shoes" />
                         </figure>
                         <div className="card-body">
-                            <h2 className="card-title text-red-600 font-bold text-4xl">Dedicated Team</h2>
-                            <p>Our in-house team is yours too. We will jump in and ramp up quickly. Your goals
-                                become our goals. We will navigate the risks of software development together.</p>
+                            <h2 className="card-title text-red-600 font-bold text-4xl">EasyAM-AGM Annual General Meeting</h2>
+                            <p>{showFullText ? fullText2 : previewText2}</p>
+                            <button onClick={toggleText} className="text-blue-500 text-left text-lg">
+                                <Link to={'/card2'}>
+                                    {showFullText ? "Show Less" : "Read More.."}
+                                </Link>
+                            </button>
                         </div>
                     </div>
                     {/* 3rd card */}
-                    <div ref={imageRefs[2]}  className="animated-image  card">
+                    <div ref={imageRefs[2]} className="animated-image  card">
                         <figure>
                             <img className='w-[400px] h-[300px]' src={pic3} alt="Shoes" />
                         </figure>
                         <div className="card-body">
-                            <h2 className="card-title text-red-600 font-bold text-4xl">Collaborative Process</h2>
-                            <p>We work as an extension of your team, not as a vendor. We help you to participate
-                                in a deeply collaborative process to develop
-                                the desired product. We will be in constant communication with your
-                                team every step of the way.</p>
+                            <h2 className="card-title text-red-600 font-bold text-4xl">EasyAM-DPS Dividend Processing Services</h2>
+                            <p>{showFullText ? fullText3 : previewText3}</p>
+                            <button onClick={toggleText} className="text-blue-500 text-left text-lg">
+                                <Link to={'/card3'}>
+                                    {showFullText ? "Show Less" : "Read More.."}
+                                </Link>
+                            </button>
                         </div>
                     </div>
                     {/* 4th card */}
@@ -86,10 +127,43 @@ const OfferPage = () => {
                             <img className='w-[400px] h-[300px]' src={pic4} alt="Shoes" />
                         </figure>
                         <div className="card-body">
-                            <h2 className="card-title text-red-600 font-bold text-4xl">Continuous Supervision</h2>
-                            <p>A project manager will be involved in the entire lifecycle of your project to plan,
-                                organize, control, and deploy key deliverables according to your desired milestones,
-                                including process improvement analysis and implementation.</p>
+                            <h2 className="card-title text-red-600 font-bold text-4xl">EasyAM-RIP Right Issue Processing</h2>
+                            <p>{showFullText ? fullText4 : previewText4}</p>
+                            <button onClick={toggleText} className="text-blue-500 text-left text-lg">
+                                <Link to={'/card4'}>
+                                    {showFullText ? "Show Less" : "Read More.."}
+                                </Link>
+                            </button>
+                        </div>
+                    </div>
+                    {/* 5th card */}
+                    <div ref={imageRefs[4]} className="animated-image card">
+                        <figure>
+                            <img className='w-[400px] h-[300px]' src={pic5} alt="Shoes" />
+                        </figure>
+                        <div className="card-body">
+                            <h2 className="card-title text-red-600 font-bold text-4xl">EasyAM-HCM Human Capital Management</h2>
+                            <p>{showFullText ? fullText5 : previewText5}</p>
+                            <button onClick={toggleText} className="text-blue-500 text-left text-lg">
+                                <Link to={'/card5'}>
+                                    {showFullText ? "Show Less" : "Read More.."}
+                                </Link>
+                            </button>
+                        </div>
+                    </div>
+                    {/* 6th card */}
+                    <div ref={imageRefs[5]} className="animated-image card">
+                        <figure>
+                            <img className='w-[400px] h-[300px]' src={pic6} alt="Shoes" />
+                        </figure>
+                        <div className="card-body">
+                            <h2 className="card-title text-red-600 font-bold text-4xl">EasyAM-CS Cyber Security</h2>
+                            <p>{showFullText ? fullText6 : previewText6}</p>
+                            <button onClick={toggleText} className="text-blue-500 text-left text-lg">
+                                <Link to={'/card6'}>
+                                    {showFullText ? "Show Less" : "Read More.."}
+                                </Link>
+                            </button>
                         </div>
                     </div>
                 </div>

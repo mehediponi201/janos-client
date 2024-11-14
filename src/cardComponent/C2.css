@@ -1,0 +1,29 @@
+
+
+.platform-functionality {
+    background-color: #f2f2f2; /* Background color similar to the image */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .platform-functionality ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .platform-functionality > ul > li {
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .platform-functionality ul ul {
+    list-style-type: none;
+    padding-left: 20px;
+    font-weight: normal;
+  }
+  
+  .platform-functionality ul ul li {
+    margin-bottom: 8px;
+  }
+  
