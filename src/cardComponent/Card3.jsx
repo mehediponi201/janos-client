@@ -25,8 +25,7 @@ const Card3 = () => {
                     <li>- BEFTN Returned Dividend Warrant Processing</li>
                     <li>- Tax Certificate Processing (NBR Format)</li>
                 </ul>
-            </li>
-            
+            </li>  
         </ul>
     </div>
        </div>

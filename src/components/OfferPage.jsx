@@ -42,22 +42,22 @@ const OfferPage = () => {
     };
 
     const fullText1 = "Shares Management of public limited company with core functionalities";
-    const previewText1 = fullText1.split(' ').slice(0, 10).join(' ') + (fullText1.split(' ').length > 10 ? '...' : '');
+    const previewText1 = fullText1.split(' ').slice(0, 20).join(' ') + (fullText1.split(' ').length > 20 ? '...' : '');
 
     const fullText2 = "Hybrid Virtual Annual General Meeting of Public Limited Company";
-    const previewText2 = fullText2.split(' ').slice(0, 10).join(' ') + (fullText2.split(' ').length > 10 ? '...' : '');
+    const previewText2 = fullText2.split(' ').slice(0, 20).join(' ') + (fullText2.split(' ').length > 20 ? '...' : '');
 
     const fullText3 = "Change how a firm declares and distributes its dividends.";
-    const previewText3 = fullText3.split(' ').slice(0, 10).join(' ') + (fullText3.split(' ').length > 10 ? '...' : '');
+    const previewText3 = fullText3.split(' ').slice(0, 20).join(' ') + (fullText3.split(' ').length > 20 ? '...' : '');
 
     const fullText4 = "Right Shares Issue Processing of Public Limited Company";
-    const previewText4 = fullText4.split(' ').slice(0, 10).join(' ') + (fullText4.split(' ').length > 10 ? '...' : '');
+    const previewText4 = fullText4.split(' ').slice(0, 20).join(' ') + (fullText4.split(' ').length > 20 ? '...' : '');
 
     const fullText5 = "HUMAN RESOURCES as the CAPITAL like other capital resources deployed";
-    const previewText5 = fullText5.split(' ').slice(0, 10).join(' ') + (fullText5.split(' ').length > 10 ? '...' : '');
+    const previewText5 = fullText5.split(' ').slice(0, 20).join(' ') + (fullText5.split(' ').length > 20 ? '...' : '');
 
-    const fullText6 = "HUMAN RESOURCES as the CAPITAL like other capital resources deployed";
-    const previewText6 = fullText6.split(' ').slice(0, 10).join(' ') + (fullText6.split(' ').length > 10 ? '...' : '');
+    const fullText6 = "Ensuring security for networks and software both before and after the creation of networks and software. An expert in cyber security looks for dangers in software and hardware systems. ";
+    const previewText6 = fullText6.split(' ').slice(0, 20).join(' ') + (fullText6.split(' ').length > 20 ? '...' : '');
 
 
 

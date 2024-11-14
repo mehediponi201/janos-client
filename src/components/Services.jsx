@@ -86,7 +86,7 @@ const Services = () => {
                 {/* 4th card */}
                 <div className='lg:flex items-center'>
                     <div className='space-y-2'>
-                        <h3 className='text-4xl font-semibold text-red-500 text-center'>Quality Assurance & Testing Development</h3>
+                        <h3 className='text-4xl font-semibold text-red-500 text-center'>Cyber Security Assurance & Development</h3>
                         <p className='text-center'>
                             Treading on Agile development methodologies and Rational Unified Process practices in testing,Janos ensures highest
                             quality of software solutions to you. Our software testing strategy ensures every component of your software are free of bugs and issues.
