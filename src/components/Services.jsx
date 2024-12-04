@@ -3,6 +3,8 @@ import img2 from '../assets/s-2.png';
 import img3 from '../assets/s-3.png';
 import img4 from '../assets/s-4.png';
 import './Services.css';
+import pic1 from '../assets/developer.png';
+import pic3 from '../assets/app-development.png';
 import React, { useEffect, useRef } from 'react';
 
 const Services = () => {
@@ -48,9 +50,9 @@ const Services = () => {
             <div className='mt-8'>
                 {/* 1st card */}
                 <div className='lg:flex items-center'>
-                    <img ref={imageRefs[0]} className='animated-image w-[500px] h-[450px]' src={img1} alt="" />
+                    <img ref={imageRefs[0]} className='animated-image w-[400px] h-[450px]' src={pic1} alt="" /> 
                     <div className='space-y-2'>
-                        <h3 className='text-4xl font-semibold text-red-500 text-center'>Software Development</h3>
+                        <h3 className='text-4xl font-bold text-black-500 text-center'>Software Development</h3>
                         <p className='text-center'>
                             Janos helps you create diverse and complex software solutions for your business needs. Listening to your ideas, we implement and
                             create custom software solutions from scratch, designed especially for your business. With Janos, you get quality software and
@@ -61,7 +63,7 @@ const Services = () => {
                 {/* 2nd card */}
                 <div className='lg:flex items-center'>
                     <div className='space-y-2'>
-                        <h3 className='text-4xl font-semibold text-red-500 text-center'>Web Application Development</h3>
+                        <h3 className='text-4xl font-bold text-black-500 text-center'>Web Application Development</h3>
                         <p className='text-center'>
                             Janos looks beyond conventional solutions to develop disruptive web products.
                             Our skilled and dedicated web development team understands your needs and leverage the dynamism of modern web frameworks to
@@ -72,9 +74,9 @@ const Services = () => {
                 </div>
                 {/* 3rd card */}
                 <div className='lg:flex items-center'>
-                    <img ref={imageRefs[2]} className='animated-image w-[500px] h-[450px]' src={img3} alt="" />
+                    <img ref={imageRefs[2]} className='animated-image w-[400px] h-[450px]' src={pic3} alt="" />
                     <div className='space-y-2'>
-                        <h3 className='text-4xl font-semibold text-red-500 text-center'>Mobile Application Development</h3>
+                        <h3 className='text-4xl font-bold text-black-500 text-center'>Mobile Application Development</h3>
                         <p className='text-center'>
                             Our expertise in custom mobile app development gives our clients the opportunity to pack incredible functionality into their customer’s hands.
                             We develop apps that perform across different mobile devices and operating systems.
@@ -86,7 +88,7 @@ const Services = () => {
                 {/* 4th card */}
                 <div className='lg:flex items-center'>
                     <div className='space-y-2'>
-                        <h3 className='text-4xl font-semibold text-red-500 text-center'>Cyber Security Assurance & Development</h3>
+                        <h3 className='text-4xl font-bold text-black-500 text-center'>Cyber Security Assurance & Development</h3>
                         <p className='text-center'>
                             Treading on Agile development methodologies and Rational Unified Process practices in testing,Janos ensures highest
                             quality of software solutions to you. Our software testing strategy ensures every component of your software are free of bugs and issues.

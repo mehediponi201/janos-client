@@ -4,6 +4,8 @@ import pic3 from '../assets/offer/home-engineers.png';
 import pic4 from '../assets/offer/home-collaboration.png';
 import pic5 from '../assets/offer/offer-5.png';
 import pic6 from '../assets/offer/offer-6.png';
+import img5 from '../assets/team-management.png';
+import img6 from '../assets/hacking.png';
 import './Services.css';
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -82,7 +84,7 @@ const OfferPage = () => {
                             <img className=' w-[400px] h-[300px]' src={pic1} alt="Shoes" />
                         </figure>
                         <div className="card-body">
-                            <h2 className="card-title text-red-600 font-bold text-3xl">EasyAM-SMS Share Management Systems</h2>
+                            <h2 className="card-title text-black-600 font-bold text-3xl">EasyAM-SMS Share Management Systems</h2>
                             <p>{showFullText ? fullText1 : previewText1}</p>
                             <button onClick={toggleText} className="text-blue-500 text-left text-lg">
                                 <Link to={'/card1'}>
@@ -97,7 +99,7 @@ const OfferPage = () => {
                             <img className='w-[400px] h-[300px]' src={pic2} alt="Shoes" />
                         </figure>
                         <div className="card-body">
-                            <h2 className="card-title text-red-600 font-bold text-4xl">EasyAM-AGM Annual General Meeting</h2>
+                            <h2 className="card-title text-black-600 font-bold text-4xl">EasyAM-AGM Annual General Meeting</h2>
                             <p>{showFullText ? fullText2 : previewText2}</p>
                             <button onClick={toggleText} className="text-blue-500 text-left text-lg">
                                 <Link to={'/card2'}>
@@ -112,7 +114,7 @@ const OfferPage = () => {
                             <img className='w-[400px] h-[300px]' src={pic3} alt="Shoes" />
                         </figure>
                         <div className="card-body">
-                            <h2 className="card-title text-red-600 font-bold text-4xl">EasyAM-DPS Dividend Processing Services</h2>
+                            <h2 className="card-title text-black-600 font-bold text-4xl">EasyAM-DPS Dividend Processing Services</h2>
                             <p>{showFullText ? fullText3 : previewText3}</p>
                             <button onClick={toggleText} className="text-blue-500 text-left text-lg">
                                 <Link to={'/card3'}>
@@ -127,7 +129,7 @@ const OfferPage = () => {
                             <img className='w-[400px] h-[300px]' src={pic4} alt="Shoes" />
                         </figure>
                         <div className="card-body">
-                            <h2 className="card-title text-red-600 font-bold text-4xl">EasyAM-RIP Right Issue Processing</h2>
+                            <h2 className="card-title text-black-600 font-bold text-4xl">EasyAM-RIP Right Issue Processing</h2>
                             <p>{showFullText ? fullText4 : previewText4}</p>
                             <button onClick={toggleText} className="text-blue-500 text-left text-lg">
                                 <Link to={'/card4'}>
@@ -139,10 +141,10 @@ const OfferPage = () => {
                     {/* 5th card */}
                     <div ref={imageRefs[4]} className="animated-image card">
                         <figure>
-                            <img className='w-[400px] h-[300px]' src={pic5} alt="Shoes" />
+                            <img className='w-[400px] h-[300px]' src={img5} alt="Shoes" />
                         </figure>
                         <div className="card-body">
-                            <h2 className="card-title text-red-600 font-bold text-4xl">EasyAM-HCM Human Capital Management</h2>
+                            <h2 className="card-title text-black-600 font-bold text-4xl">EasyAM-HCM Human Capital Management</h2>
                             <p>{showFullText ? fullText5 : previewText5}</p>
                             <button onClick={toggleText} className="text-blue-500 text-left text-lg">
                                 <Link to={'/card5'}>
@@ -154,10 +156,10 @@ const OfferPage = () => {
                     {/* 6th card */}
                     <div ref={imageRefs[5]} className="animated-image card">
                         <figure>
-                            <img className='w-[400px] h-[300px]' src={pic6} alt="Shoes" />
+                            <img className='w-[400px] h-[300px]' src={img6} alt="Shoes" />
                         </figure>
                         <div className="card-body">
-                            <h2 className="card-title text-red-600 font-bold text-4xl">EasyAM-CS Cyber Security</h2>
+                            <h2 className="card-title text-black-600 font-bold text-4xl">EasyAM-CS Cyber Security</h2>
                             <p>{showFullText ? fullText6 : previewText6}</p>
                             <button onClick={toggleText} className="text-blue-500 text-left text-lg">
                                 <Link to={'/card6'}>

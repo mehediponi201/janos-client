@@ -4,14 +4,15 @@ import pic3 from '../assets/DutchBangla.png';
 import pic4 from '../assets/Confidence.jpg';
 
 const Clients = () => {
+
     return (
         <div className="mt-20 bg-base-800 shadow-inner">
             <h3 className="text-5xl text-center font-semibold pt-10 " >Our Valued Clients</h3>
+
             {/* clients carousel */}
-            {/* bg-base-100 w-96 shadow-xl */}
             {/* slider-1 */}
             <div className="carousel w-full ">
-                <div id="slide1" className="carousel-item relative w-full gap-3 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 items-center">
+                <div id="slide1" className="carousel-item relative w-full gap-3 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 items-center">
                     {/* card-1 */}
                     <div className="card ml-4">
                         <figure className="px-10 pt-10">
@@ -30,7 +31,7 @@ const Clients = () => {
                             <h2 className="card-title">CityBank</h2>
                         </div>
                     </div>
-                    {/* card-3 */} 
+                    {/* card-3 */}
                     <div className="card">
                         <figure className="px-10 pt-10">
                             <img src={pic3} className="rounded-xl w-[200px] h-[150px]" />
@@ -55,8 +56,8 @@ const Clients = () => {
                     </div>
                 </div>
                 {/* slider-2 */}
-                <div id="slide2" className="carousel-item relative w-full gap-3 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 items-center">
-                   
+                <div id="slide2" className="carousel-item relative w-full gap-3 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 items-center">
+
                     {/* card-2 */}
                     <div className="card">
                         <figure className="px-10 pt-10">
@@ -66,8 +67,8 @@ const Clients = () => {
                             <h2 className="card-title">CityBank</h2>
                         </div>
                     </div>
-                     {/* card-3 */} 
-                     <div className="card">
+                    {/* card-3 */}
+                    <div className="card">
                         <figure className="px-10 pt-10">
                             <img src={pic3} className="rounded-xl w-[200px] h-[150px]" />
                         </figure>
@@ -84,7 +85,7 @@ const Clients = () => {
                             <h2 className="card-title">Confidence</h2>
                         </div>
                     </div>
-                      {/* card-1 */}
+                    {/* card-1 */}
                     <div className="card">
                         <figure className="px-10 pt-10">
                             <img src={pic1} className="rounded-xl w-[200px] h-[150px]" />
@@ -99,8 +100,8 @@ const Clients = () => {
                     </div>
                 </div>
                 {/* slider-3 */}
-                <div id="slide3" className="carousel-item relative w-full gap-3 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 items-center">
-                    {/* card-3 */} 
+                <div id="slide3" className="carousel-item relative w-full gap-3 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 items-center">
+                    {/* card-3 */}
                     <div className="card">
                         <figure className="px-10 pt-10">
                             <img src={pic3} className="rounded-xl w-[200px] h-[150px]" />
@@ -119,8 +120,8 @@ const Clients = () => {
                         </div>
                     </div>
 
-                     {/* card-1 */}
-                     <div className="card">
+                    {/* card-1 */}
+                    <div className="card">
                         <figure className="px-10 pt-10">
                             <img src={pic2} className="rounded-xl w-[200px] h-[150px]" />
                         </figure>
@@ -129,8 +130,8 @@ const Clients = () => {
                         </div>
                     </div>
 
-                     {/* card-2 */}
-                     <div className="card ">
+                    {/* card-2 */}
+                    <div className="card ">
                         <figure className="px-10 pt-10">
                             <img src={pic1} className="rounded-xl w-[200px] h-[150px]" />
                         </figure>
@@ -146,8 +147,8 @@ const Clients = () => {
                 </div>
 
                 {/* slider-4 */}
-                <div id="slide4" className="carousel-item relative w-full gap-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
-                    
+                <div id="slide4" className="carousel-item relative w-full gap-5 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4">
+
                     {/* card-4 */}
                     <div className="card ">
                         <figure className="px-10 pt-10">
@@ -158,8 +159,8 @@ const Clients = () => {
                         </div>
                     </div>
 
-                     {/* card-1 */}
-                     <div className="card">
+                    {/* card-1 */}
+                    <div className="card">
                         <figure className="px-10 pt-10">
                             <img src={pic2} className="rounded-xl w-[200px] h-[150px]" />
                         </figure>
@@ -168,8 +169,8 @@ const Clients = () => {
                         </div>
                     </div>
 
-                     {/* card-2 */}
-                     <div className="card ">
+                    {/* card-2 */}
+                    <div className="card ">
                         <figure className="px-10 pt-10">
                             <img src={pic1} className="rounded-xl w-[200px] h-[150px]" />
                         </figure>
@@ -178,7 +179,7 @@ const Clients = () => {
                         </div>
                     </div>
 
-                    {/* card-3 */} 
+                    {/* card-3 */}
                     <div className="card">
                         <figure className="px-10 pt-10">
                             <img src={pic3} className="rounded-xl w-[200px] h-[150px]" />
@@ -193,7 +194,7 @@ const Clients = () => {
                         <a href="#slide1" className="btn btn-circle">❯</a>
                     </div>
                 </div>
-                
+
             </div>
 
         </div>
